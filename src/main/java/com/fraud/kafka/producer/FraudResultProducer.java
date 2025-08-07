@@ -1,4 +1,4 @@
-package com.fraud.fraud.kafka.producer;
+package com.fraud.kafka.producer;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

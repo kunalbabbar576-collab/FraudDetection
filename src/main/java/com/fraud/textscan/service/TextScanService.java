@@ -1,12 +1,12 @@
-package com.fraud.fraud.textscan.service;
+package com.fraud.textscan.service;
 
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fraud.fraud.textscan.client.LLMClient;
-import com.fraud.fraud.textscan.dto.ScanResponse;
+import com.fraud.textscan.client.LLMClient;
+import com.fraud.textscan.dto.ScanResponse;
 
 @Service
 public class TextScanService {

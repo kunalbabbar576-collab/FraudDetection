@@ -1,4 +1,4 @@
-package com.fraud.fraud.kafka.producer;
+package com.fraud.kafka.producer;
 
 import java.util.HashMap;
 import java.util.Map;

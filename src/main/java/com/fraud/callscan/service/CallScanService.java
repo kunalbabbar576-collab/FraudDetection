@@ -1,12 +1,12 @@
-package com.fraud.fraud.callscan.service;
+package com.fraud.callscan.service;
 
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fraud.fraud.callscan.dto.CallScanResponse;
-import com.fraud.fraud.textscan.client.LLMClient;
+import com.fraud.callscan.dto.CallScanResponse;
+import com.fraud.textscan.client.LLMClient;
 
 @Service
 public class CallScanService {

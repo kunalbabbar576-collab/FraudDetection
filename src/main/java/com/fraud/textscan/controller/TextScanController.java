@@ -1,4 +1,4 @@
-package com.fraud.fraud.textscan.controller;
+package com.fraud.textscan.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fraud.fraud.textscan.dto.ScanRequest;
-import com.fraud.fraud.textscan.dto.ScanResponse;
-import com.fraud.fraud.textscan.service.TextScanService;
+import com.fraud.textscan.dto.ScanRequest;
+import com.fraud.textscan.dto.ScanResponse;
+import com.fraud.textscan.service.TextScanService;
 
 @RestController
 @RequestMapping("/api/v1/text")

@@ -1,4 +1,4 @@
-package com.fraud.fraud.textscan.client;
+package com.fraud.textscan.client;
 import java.util.Map;
 
 import org.springframework.cloud.openfeign.FeignClient;

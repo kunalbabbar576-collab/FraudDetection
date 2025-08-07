@@ -22,13 +22,13 @@ public class FraudDecisionRequest {
         this.behavioralScore = behavioralScore;
     }
 
-    public void getMessage(){
+    public String getMessage(){
         return message;
     }
     public void setMessage(String message){
         this.message=message;
     }
-    public void getChannel(){
+    public String getChannel(){
         return channel;
     }
     public void setChannel(String channel){

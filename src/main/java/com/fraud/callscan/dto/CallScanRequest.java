@@ -1,4 +1,4 @@
-package com.fraud.fraud.callscan.dto;
+package com.fraud.callscan.dto;
 
 public class CallScanRequest {
     private String transcript;

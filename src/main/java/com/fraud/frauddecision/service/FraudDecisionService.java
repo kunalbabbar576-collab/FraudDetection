@@ -1,9 +1,14 @@
 package com.fraud.frauddecision.service;
 
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fraud.frauddecision.dto.FraudDecisionRequest;
 import com.fraud.frauddecision.dto.FraudDecisionResponse;
+import com.fraud.frauddecision.dto.FraudResultEvent;
+import com.fraud.kafka.producer.FraudResultProducer;
 
 @Service
 public class FraudDecisionService {
@@ -22,9 +27,9 @@ public class FraudDecisionService {
         event.setLlmScore(request.getLlmScore());
         event.setBehavioralScore(request.getBehavioralScore());
         event.setFinalScore(finalScore);
-        event.setIsScam(isScam);
+        event.setScam(isScam);
         event.setTimestamp(LocalDateTime.now());
-        fraudResultProducer.send(event);
+        fraudResultProducer.publishResult(event);
 
         return new FraudDecisionResponse(finalScore, isScam);
     }

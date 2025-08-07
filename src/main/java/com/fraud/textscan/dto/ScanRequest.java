@@ -1,4 +1,4 @@
-package com.fraud.fraud.textscan.dto;
+package com.fraud.textscan.dto;
 
 public class ScanRequest {
     private String message;
